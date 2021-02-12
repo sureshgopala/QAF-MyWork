@@ -47,6 +47,11 @@
 			<artifactId>qaf</artifactId>
 			<version>${qaf.version}</version>
 		</dependency>
+	<dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.8.13</version>
+    </dependency>
 		<dependency>
 			<groupId>com.qmetry</groupId>
 			<artifactId>qaf-support</artifactId>
@@ -70,30 +75,6 @@
 					<target>${targetVersion}</target>
 				</configuration>
 			</plugin>
-			<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>aspectj-maven-plugin</artifactId>
-    <version>1.6</version>
-    <configuration>
-        <complianceLevel>1.7</complianceLevel>
-        <source>1.7</source>
-        <target>1.7</target>
-        <encoding>UTF-8</encoding>
-    </configuration>
-    <executions>
-        <execution>
-            <phase>process-sources</phase>
-            <goals>
-                <goal>compile</goal>
-            </goals>
-            <configuration>
-                <complianceLevel>1.7</complianceLevel>
-                <source>1.7</source>
-                <target>1.7</target>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>aspectj-maven-plugin</artifactId>
