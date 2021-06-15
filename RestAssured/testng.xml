@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="MYAPI" parallel="methods" thread-count="4" verbose="1" >
+    <test name="Api Test" >
+        <classes>
+            <class name="com.learning.restassured.ReqResTest">
+            </class>
+        </classes>
+    </test>
+</suite>
